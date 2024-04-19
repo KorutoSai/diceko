@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>diceKo</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main-container">
+            <div class="title">
+                <h1>diceKo</h1>
+            </div>
+
+            <div class="selector-container">
+                <p>Select type of dice</p>
+                <select onchange="selectType()" class="selector" id="select_location">
+                    <option selected="">- Select -</option>
+                    <option value="index.html">6 Sided Dice Versus</option>
+                    <option value="dualDice6.html">6 Sided Dice Dual Dice Single</option>
+                    <option value="singleDice6.html">6 Sided Dice Single</option>
+                    <option value="versusDualDice20.html">20 Sided Dice Versus</option>
+                    <option value="dualDice20.html">20 Sided Dual Dice Single</option>
+                    <option value="singleDice20.html">20 Sided Dice Single</option>
+                </select>
+
+            </div>
+
+            <div class="dice-game-header">
+                <h3>Twenty Sided Dice </h3>
+                <h3>Versus</h3>
+            </div>
+            <div class="dice-game-container2">
+
+                <h3 class="announcer" id="announcer"></h3>
+
+                <div class="dice-container">
+                    <div class="dice2">
+                        <p id="1DiceActual">Player 1</p> <img id="diceImg" class="diceImgAct2"
+                            src="/image/20digit dice/1.jpg" />
+                    </div>
+                    <div class="dice2">
+                        <p id="2DiceActual">Player 2 </p><img id="diceImg2" class="diceImgAct2"
+                            src="/image/20digit dice/1.jpg" />
+                    </div>
+                </div>
+                <button class="button" id="play" onclick="rollActual()">Roll</button>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="versusDualDice20.js"></script>
+</body>
+
+</html>
